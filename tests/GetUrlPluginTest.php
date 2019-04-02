@@ -3,8 +3,8 @@ namespace Mrubiosan\FlyUrlPlugin\Tests;
 
 use League\Flysystem\AdapterInterface;
 use League\Flysystem\Filesystem;
-use Mrubiosan\FlyUrlPlugin\AdapterHandlerInterface;
-use Mrubiosan\FlyUrlPlugin\AdapterHandlerRepository;
+use Mrubiosan\FlyUrlPlugin\AdapterHandler\AdapterHandlerInterface;
+use Mrubiosan\FlyUrlPlugin\AdapterHandler\AdapterHandlerRepository;
 use Mrubiosan\FlyUrlPlugin\Exception\UnsupportedAdapterException;
 use Mrubiosan\FlyUrlPlugin\GetUrlPlugin;
 use PHPUnit\Framework\TestCase;

@@ -4,6 +4,8 @@ namespace Mrubiosan\FlyUrlPlugin;
 use League\Flysystem\AdapterInterface;
 use League\Flysystem\FilesystemInterface;
 use League\Flysystem\PluginInterface;
+use Mrubiosan\FlyUrlPlugin\AdapterHandler\AdapterHandlerInterface;
+use Mrubiosan\FlyUrlPlugin\AdapterHandler\AdapterHandlerRepository;
 use Mrubiosan\FlyUrlPlugin\Exception\NoAdapterException;
 
 abstract class AbstractUrlPlugin implements PluginInterface

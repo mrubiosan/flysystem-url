@@ -1,7 +1,8 @@
 <?php
-namespace Mrubiosan\FlyUrlPlugin;
+namespace Mrubiosan\FlyUrlPlugin\AdapterHandler;
 
 use League\Flysystem\AdapterInterface;
+use Mrubiosan\FlyUrlPlugin\AdapterHandler\AdapterHandlerInterface;
 
 class AdapterHandlerRepository
 {

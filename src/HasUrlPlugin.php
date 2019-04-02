@@ -18,8 +18,6 @@ class HasUrlPlugin extends AbstractUrlPlugin
             return false;
         }
 
-        $adapterHandler = $this->findAdapterHandler($adapter);
-
-        return $adapterHandler && $adapterHandler->hasUrl($adapter, $path);
+        return $this->findAdapterHandler($adapter) !== null;
     }
 }

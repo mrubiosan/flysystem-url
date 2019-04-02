@@ -1,5 +1,5 @@
 <?php
-namespace Mrubiosan\FlyUrlPlugin;
+namespace Mrubiosan\FlyUrlPlugin\AdapterHandler;
 
 use League\Flysystem\AdapterInterface;
 
@@ -17,11 +17,4 @@ interface AdapterHandlerInterface
      * @return string
      */
     public function getUrl($adapter, $path);
-
-    /**
-     * @param $adapter
-     * @param $path
-     * @return bool
-     */
-    public function hasUrl($adapter, $path);
 }

@@ -4,8 +4,8 @@ namespace Mrubiosan\FlyUrlPlugin\Tests;
 use League\Flysystem\AdapterInterface;
 use League\Flysystem\Filesystem;
 use League\Flysystem\FilesystemInterface;
-use Mrubiosan\FlyUrlPlugin\AdapterHandlerInterface;
-use Mrubiosan\FlyUrlPlugin\AdapterHandlerRepository;
+use Mrubiosan\FlyUrlPlugin\AdapterHandler\AdapterHandlerInterface;
+use Mrubiosan\FlyUrlPlugin\AdapterHandler\AdapterHandlerRepository;
 use Mrubiosan\FlyUrlPlugin\Exception\NoAdapterException;
 use Mrubiosan\FlyUrlPlugin\HasUrlPlugin;
 use PHPUnit\Framework\TestCase;
@@ -39,11 +39,7 @@ class HasUrlPluginTest extends TestCase
 
         $adapterHandlerMock = $this->prophesize(AdapterHandlerInterface::class);
         $this->adapterHandlerRepoMock->findFor($adapterMock)
-            ->willReturn($adapterHandlerMock);
-
-        $adapterHandlerMock->hasUrl($adapterMock, 'foo/bar')
-            ->shouldBeCalled()
-            ->willReturn(true, false);
+            ->willReturn($adapterHandlerMock, null);
 
         $this->assertTrue($this->testSubject->handle('foo/bar'));
         $this->assertFalse($this->testSubject->handle('foo/bar'));

@@ -1,9 +1,9 @@
 <?php
-namespace Mrubiosan\FlyUrlPlugin\Tests;
+namespace Mrubiosan\FlyUrlPlugin\Tests\AdapterHandler;
 
 use League\Flysystem\AdapterInterface;
-use Mrubiosan\FlyUrlPlugin\AdapterHandlerInterface;
-use Mrubiosan\FlyUrlPlugin\AdapterHandlerRepository;
+use Mrubiosan\FlyUrlPlugin\AdapterHandler\AdapterHandlerInterface;
+use Mrubiosan\FlyUrlPlugin\AdapterHandler\AdapterHandlerRepository;
 use PHPUnit\Framework\TestCase;
 
 class AdapterHandlerRepositoryTest extends TestCase
