@@ -12,13 +12,13 @@ Supports:
 
 ```php
 $s3Client = new \Aws\S3\S3Client([//AWS client config...]);
-$urlS3Adapter = new \Mrubiosan\FlyUrlPlugin\Adapter\UrlAwsS3Adapter($s3Client, 'mybucket');
-$urlFilesystem = new \Mrubiosan\FlyUrlPlugin\Filesystem\UrlFilesystem($urlS3Adapter);
+$urlS3Adapter = new \Mrubiosan\FlyUrl\Adapter\UrlAwsS3Adapter($s3Client, 'mybucket');
+$urlFilesystem = new \Mrubiosan\FlyUrl\Filesystem\UrlFilesystem($urlS3Adapter);
 
 echo $urlFilesystem->getUrl('my/s3/file');
 ``` 
 
 Available adapters:
-* Mrubiosan\FlyUrlPlugin\Adapter\UrlAwsS3Adapter
-* Mrubiosan\FlyUrlPlugin\Adapter\UrlAzureBlobStorageAdapter
-* Mrubiosan\FlyUrlPlugin\Adapter\UrlGoogleStorageAdapter
+* Mrubiosan\FlyUrl\Adapter\UrlAwsS3Adapter
+* Mrubiosan\FlyUrl\Adapter\UrlAzureBlobStorageAdapter
+* Mrubiosan\FlyUrl\Adapter\UrlGoogleStorageAdapter

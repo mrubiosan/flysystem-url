@@ -1,10 +1,10 @@
 <?php
-namespace Mrubiosan\FlyUrlPlugin\Tests\Adapter;
+namespace Mrubiosan\FlyUrl\Tests\Adapter;
 
 use Google\Cloud\Storage\Bucket;
 use Google\Cloud\Storage\StorageClient;
-use Mrubiosan\FlyUrlPlugin\Adapter\UrlAdapterInterface;
-use Mrubiosan\FlyUrlPlugin\Adapter\UrlGoogleStorageAdapter;
+use Mrubiosan\FlyUrl\Adapter\UrlAdapterInterface;
+use Mrubiosan\FlyUrl\Adapter\UrlGoogleStorageAdapter;
 use PHPUnit\Framework\TestCase;
 
 class UrlGoogleStorageAdapterTest extends TestCase

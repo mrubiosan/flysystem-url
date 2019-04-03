@@ -1,5 +1,5 @@
 <?php
-namespace Mrubiosan\FlyUrlPlugin\Adapter;
+namespace Mrubiosan\FlyUrl\Adapter;
 
 use League\Flysystem\AdapterInterface;
 

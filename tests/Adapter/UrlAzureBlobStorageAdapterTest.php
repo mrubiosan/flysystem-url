@@ -1,8 +1,8 @@
 <?php
-namespace Mrubiosan\FlyUrlPlugin\Tests\Adapter;
+namespace Mrubiosan\FlyUrl\Tests\Adapter;
 
 use MicrosoftAzure\Storage\Blob\BlobRestProxy;
-use Mrubiosan\FlyUrlPlugin\Adapter\UrlAzureBlobStorageAdapter;
+use Mrubiosan\FlyUrl\Adapter\UrlAzureBlobStorageAdapter;
 use PHPUnit\Framework\TestCase;
 
 class UrlAzureBlobStorageAdapterTest extends TestCase

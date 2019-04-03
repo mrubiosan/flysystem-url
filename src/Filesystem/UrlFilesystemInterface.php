@@ -1,5 +1,5 @@
 <?php
-namespace Mrubiosan\FlyUrlPlugin\Filesystem;
+namespace Mrubiosan\FlyUrl\Filesystem;
 
 use League\Flysystem\FilesystemInterface;
 

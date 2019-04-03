@@ -1,8 +1,8 @@
 <?php
-namespace Mrubiosan\FlyUrlPlugin\Filesystem;
+namespace Mrubiosan\FlyUrl\Filesystem;
 
 use League\Flysystem\Filesystem;
-use Mrubiosan\FlyUrlPlugin\Adapter\UrlAdapterInterface;
+use Mrubiosan\FlyUrl\Adapter\UrlAdapterInterface;
 
 class UrlFilesystem extends Filesystem implements UrlFilesystemInterface
 {

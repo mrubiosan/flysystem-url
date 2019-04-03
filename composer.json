@@ -1,7 +1,7 @@
 {
     "name": "mrubiosan/flysystem-url",
     "description": "Flysystem URL generation from Cloud providers like Aws S3 and Azure Blob",
-    "type": "plugin",
+    "type": "library",
     "license": "GPL-3.0-only",
     "authors": [
         {
@@ -12,12 +12,12 @@
     "minimum-stability": "stable",
     "autoload": {
         "psr-4": {
-            "Mrubiosan\\FlyUrlPlugin\\": "src"
+            "Mrubiosan\\FlyUrl\\": "src"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "Mrubiosan\\FlyUrlPlugin\\Tests\\": "tests"
+            "Mrubiosan\\FlyUrl\\Tests\\": "tests"
         }
     },
     "require": {

@@ -1,8 +1,8 @@
 <?php
-namespace Mrubiosan\FlyUrlPlugin\Tests\Filesystem;
+namespace Mrubiosan\FlyUrl\Tests\Filesystem;
 
-use Mrubiosan\FlyUrlPlugin\Adapter\UrlAdapterInterface;
-use Mrubiosan\FlyUrlPlugin\Filesystem\UrlFilesystem;
+use Mrubiosan\FlyUrl\Adapter\UrlAdapterInterface;
+use Mrubiosan\FlyUrl\Filesystem\UrlFilesystem;
 use PHPUnit\Framework\TestCase;
 
 class UrlFilesystemTest extends TestCase

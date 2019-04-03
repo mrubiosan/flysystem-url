@@ -1,8 +1,8 @@
 <?php
-namespace Mrubiosan\FlyUrlPlugin\Tests\Adapter;
+namespace Mrubiosan\FlyUrl\Tests\Adapter;
 
 use Aws\S3\S3Client;
-use Mrubiosan\FlyUrlPlugin\Adapter\UrlAwsS3Adapter;
+use Mrubiosan\FlyUrl\Adapter\UrlAwsS3Adapter;
 use PHPUnit\Framework\TestCase;
 
 class UrlAwsS3AdapterTest extends TestCase
