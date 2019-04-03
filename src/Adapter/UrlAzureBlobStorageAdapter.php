@@ -1,15 +1,10 @@
 <?php
 namespace Mrubiosan\FlyUrlPlugin\Adapter;
 
-use League\Flysystem\AzureBlobStorage\AzureBlobStorageAdapter as BaseAdapter;
+use League\Flysystem\AzureBlobStorage\AzureBlobStorageAdapter;
 use MicrosoftAzure\Storage\Blob\BlobRestProxy;
 
-
-/**
- * Exposes getBlobUrl() that otherwise is inaccessible, as client and container properties are hidden
- * @package Mrubiosan\FlyUrlPlugin\Adapter
- */
-class AzureBlobStorageAdapterWithUrl extends BaseAdapter
+class UrlAzureBlobStorageAdapter extends AzureBlobStorageAdapter implements UrlAdapterInterface
 {
     /**
      * @var BlobRestProxy
@@ -28,12 +23,8 @@ class AzureBlobStorageAdapterWithUrl extends BaseAdapter
         parent::__construct($client, $container, $prefix);
     }
 
-    /**
-     * @param string $path
-     * @return string
-     */
-    public function getBlobUrl($path)
+    public function getUrl($path)
     {
-        return $this->client->getBlobUrl($this->container, $path);
+        return $this->client->getBlobUrl($this->container, $this->applyPathPrefix($path));
     }
 }
