@@ -1,5 +1,5 @@
 {
-    "name": "marcrubio/flysystem-url-plugin",
+    "name": "mrubiosan/flysystem-url",
     "description": "Flysystem URL generation from Cloud providers like Aws S3 and Azure Blob",
     "type": "plugin",
     "license": "GPL-3.0-only",
@@ -28,11 +28,13 @@
         "phpunit/phpunit": "^5.7",
         "league/flysystem-aws-s3-v3": "^1.0",
         "squizlabs/php_codesniffer": "^3.4",
-        "league/flysystem-azure-blob-storage": "^0.1.5"
+        "league/flysystem-azure-blob-storage": "^0.1.5",
+        "superbalist/flysystem-google-storage": "^7.2"
     },
     "suggest": {
         "league/flysystem-aws-s3-v3": "Support for AWS S3",
-        "league/flysystem-azure-blob-storage": "Support for Azure Blob Storage"
+        "league/flysystem-azure-blob-storage": "Support for Azure Blob Storage",
+        "superbalist/flysystem-google-storage": "Support for Google Cloud Storage"
     },
-    "keywords": ["flysystem", "url", "aws", "s3" ,"azure", "blob"]
+    "keywords": ["flysystem", "url", "aws", "s3" ,"azure", "blob", "google", "cloud", "storage"]
 }
